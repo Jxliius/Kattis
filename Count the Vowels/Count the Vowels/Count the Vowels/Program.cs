@@ -9,7 +9,6 @@ namespace Count_the_Vowels
             string Eingabe = Convert.ToString(Console.ReadLine());
             string Check = Eingabe.ToLower();
             int count = 0;
-            //a e i o u
             for(int i = 0; i < Check.Length; i++)
             {
                 if(Check[i] == 'a' | Check[i] == 'e' | Check[i] == 'i' | Check[i] == 'o' | Check[i] == 'u')
@@ -18,7 +17,6 @@ namespace Count_the_Vowels
                 }
             }
             Console.WriteLine(count);
-           //This is a test. //4
         }
     }
 }

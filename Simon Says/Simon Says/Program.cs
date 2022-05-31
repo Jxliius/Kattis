@@ -20,7 +20,10 @@ namespace Simon_Says
             }
             for(int i = 0; i < sol.Length; i++)
             {
-                Console.WriteLine(sol[i]);
+                if (sol[i] != null)
+                {
+                    Console.WriteLine(sol[i]);
+                }
             }
         }
     }

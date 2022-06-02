@@ -3,7 +3,7 @@
   <PropertyGroup>
     <OutputType>Exe</OutputType>
     <TargetFramework>netcoreapp3.1</TargetFramework>
-    <RootNamespace>Problem_A_School_Sprint</RootNamespace>
+    <RootNamespace>School_Spirit</RootNamespace>
   </PropertyGroup>
 
 </Project>

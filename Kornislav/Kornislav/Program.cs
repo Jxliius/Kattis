@@ -1,6 +1,4 @@
 ﻿using System;
-using System.Collections.Immutable;
-
 namespace Kornislav
 {
     internal class Program

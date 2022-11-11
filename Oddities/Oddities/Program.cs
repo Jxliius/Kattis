@@ -22,7 +22,7 @@ namespace Oddities
                 }
                 else
                 {
-                    Console.WriteLine(Zahl + " is odd")
+                    Console.WriteLine(Zahl + " is odd");
                 }
             }
         }

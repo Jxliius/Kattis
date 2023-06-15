@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Transactions;
 
 namespace AboveAverage
 {
@@ -23,10 +24,10 @@ namespace AboveAverage
                         if (Double.Parse(split[j]) > durchschnitt)
                         {
                             overdurchschnitt++;
-                            if (j == Double.Parse(split[0]))
-                            {
-                                sol[i] = overdurchschnitt / (durchschnitt / 100.0);
-                            }
+                        }
+                        if (j == Double.Parse(split[0]))
+                        {
+                            sol[i] = overdurchschnitt * (100 / Double.Parse(split[0]));
                         }
                     }
                     if (!durchschnittberechnet)
@@ -35,19 +36,19 @@ namespace AboveAverage
                     }
                     if (j == Double.Parse(split[0]))
                     {
-                        durchschnitt /= Double.Parse(split[0]);
                         if (!durchschnittberechnet)
                         {
-                            j = 1;
+                            j = 0;
+                            durchschnitt /= Double.Parse(split[0]);
+                            durchschnittberechnet = true;
                         }
-                        durchschnittberechnet = true;
                     }
 
                 }
             }
             foreach(double i in sol)
             {
-                Console.WriteLine(Math.Round(i,3));
+                Console.WriteLine(string.Format("{0:f3}", i) + "%");
             }
         }
     }

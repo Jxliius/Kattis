@@ -21,7 +21,6 @@ namespace Kattis_Sort_Two_Numbers
             {
                 Console.WriteLine(b + " " + a);
             }
-            
         }
     }
 }
